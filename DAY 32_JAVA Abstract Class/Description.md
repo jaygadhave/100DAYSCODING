@@ -2,8 +2,11 @@ A Java abstract class is a class that can't be instantiated. That means you cann
 
 Following is an example of abstract class:
 
-abstract class Book{
-    
+
+
+    abstract class Book
+
+{
     String title;
     
     abstract void setTitle(String s);
@@ -13,8 +16,8 @@ abstract class Book{
     return title;
     
     }
-
 }
+
 If you try to create an instance of this class like the following line you will get an error:
 
 Book new_novel=new Book(); 
