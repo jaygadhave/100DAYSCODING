@@ -6,7 +6,6 @@ abstract class Book{
 		return title;
 	}
 }
-
 //Write MyBook class here
 class MyBook extends Book
 {

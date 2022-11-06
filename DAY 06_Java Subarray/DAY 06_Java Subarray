@@ -20,6 +20,7 @@ public class Solution {
             sum=array1[k]+sum;
             if(sum<0){
                 count++;
+
             }
         }
     }
