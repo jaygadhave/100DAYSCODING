@@ -53,7 +53,7 @@ Sample Output
  Shafaet
  Maria
 
-Explanation
+Explanation:
 In this case, the number of events is 12. Let the name of the queue be Q.
 
 •	John is added to Q. So, it contains (John, 3.75, 50).
