@@ -8,21 +8,32 @@ Given an array of n integers, find and print its number of negative subarrays on
 
 Input Format
 The first line contains a single integer, n, denoting the length of array A = [a0, a1, . . . , an-1].
+
 The second line contains n space-separated integers describing each respective element, ai, in array A.
 
 Constraints
 1 ≤ n ≤ 100
+
 -104 ≤ ai ≤ 104
+
+
 Output Format
 Print the number of subarrays of A having negative sums.
 
+
 Sample Input
  5
+ 
  1 -2 4 -5 1
+ 
 Sample Output
+
  9
+ 
 Explanation
+
 There are nine negative subarrays of A = [ 1, -2, 4, -5, 1]:
+
 
 [1:1] ⇒ -2
 [3:3] ⇒ -5
