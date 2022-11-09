@@ -10,7 +10,6 @@ Input Format
 The first line contains a single integer, n, denoting the length of array A = [a0, a1, . . . , an-1].
 The second line contains n space-separated integers describing each respective element, ai, in array A.
 
-
 Constraints
 1 ≤ n ≤ 100
 -104 ≤ ai ≤ 104
