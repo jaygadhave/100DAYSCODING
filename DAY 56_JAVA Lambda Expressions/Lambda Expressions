@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+interface PerformOperation {
+ boolean check(int a);
+}
+class MyMath {
+ public static boolean checker(PerformOperation p, int num) {
+  return p.check(num);
+ }
+static boolean isPrime(int num){
+    if (num<=1){
+        return false;
+    }
+    for(int i = 2 ; i < Math.sqrt(num);i++){
+        if(num%i==0){return false;};
+    }
+    return true;
+}
+
+static String reverseString(String str){
+    String reverse ="";
+    for(int i = str.length()-1 ; i>=0; i--){
+        reverse+=str.charAt(i);
+    }
+    return reverse;
+}
+
+PerformOperation isOdd(){
+    return (int num)->{return (num%2!=0);};
+}
+
+PerformOperation isPrime(){
+    return (int num) ->{return isPrime(num);};
+}
+
+PerformOperation isPalindrome(){
+    return (int character)->{return (String.valueOf(character).
+    equalsIgnoreCase(reverseString(String.valueOf(character))));};};
+}
+public class Solution {
