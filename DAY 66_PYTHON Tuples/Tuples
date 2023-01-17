@@ -1,0 +1,4 @@
+n=int(input())
+list_making=map(int,input().split())
+t=tuple(list_making)
+print(hash(t))
