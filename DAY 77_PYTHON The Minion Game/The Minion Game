@@ -1,0 +1,19 @@
+def minion_game(string):
+    vowels = ['A','E','I','O','U']
+    counter = 0
+    kevin = 0
+    stuart = 0
+    for x in string:
+        if (x in vowels):
+            kevin += len(string) - counter
+        else:
+            stuart += len(string) - counter
+        counter += 1
+    
+    if kevin > stuart:
+        print("Kevin %d" % (kevin))
+    elif stuart > kevin:
+        print("Stuart {}".format(stuart))
+    else:
+        print("Draw")
+if __name__ == '__main__':
