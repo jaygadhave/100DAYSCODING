@@ -1,0 +1,12 @@
+
+import math
+import os
+import random
+import re
+import sys
+
+from datetime import datetime
+for _ in range(int(input())):
+    dt1 = datetime.strptime(input(),"%a %d %b %Y %H:%M:%S %z")
+    dt2 = datetime.strptime(input(),"%a %d %b %Y %H:%M:%S %z")
+    print(abs(int((dt1-dt2).total_seconds())))
