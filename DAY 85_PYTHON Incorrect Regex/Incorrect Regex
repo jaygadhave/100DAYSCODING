@@ -1,0 +1,9 @@
+import re
+
+count = int(input())
+for i in range(count):
+    try:
+        regex = re.compile(input())
+        print(True)
+    except:
+        print(False)
