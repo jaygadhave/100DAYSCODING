@@ -1,0 +1,6 @@
+m, n = map(int, input().split())
+arr, A, B = list(map(int, input().split())), set(map(int, input().split())), set(map(int, input().split()))
+tot = 0
+for i in arr:
+    tot += (1 if i in A else(-1 if i in B else 0))
+print(tot)
