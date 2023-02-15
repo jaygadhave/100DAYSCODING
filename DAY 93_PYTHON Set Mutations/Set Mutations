@@ -1,0 +1,34 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def inilize():
+    num_items_A = int(input().strip())
+    A = set(map(int,input().strip().split(" ")))
+    num_sets = int(input().strip())
+    return num_items_A,A,num_sets
+
+def insersection(A,value):
+    A.intersection_update(value)
+def update(A,value):
+    A.update(value)
+
+def symmetric_difference_update(A,value):
+    A.symmetric_difference_update(value)
+
+def difference_update(A,value):
+    A.difference_update(value)
+
+num_items_A , A , num_sets = inilize()
+for i in range(0,num_sets):
+    command = input().strip().split(" ")
+    if command[0] == 'intersection_update':
+        items_set = set(map(int,input().strip().split(" ")))
+        insersection(A,items_set)
+    if command[0] == 'update':
+        items_set = set(map(int, input().strip().split(" ")))
+        update(A,items_set)
+    if command[0] == 'symmetric_difference_update':
+        items_set = set(map(int, input().strip().split(" ")))
+        symmetric_difference_update(A,items_set)
+    if command[0] == 'difference_update':
+        items_set = set(map(int, input().strip().split(" ")))
+        difference_update(A,items_set)
+print(sum(A))
