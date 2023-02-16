@@ -1,0 +1,4 @@
+for _ in range(int(input())):
+    n, A = int(input()), {int(x) for x in input().split()}
+    m, B = int(input()), {int(x) for x in input().split()}
+    print(A < B)
