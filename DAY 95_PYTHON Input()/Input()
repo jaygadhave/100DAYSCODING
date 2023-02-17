@@ -1,0 +1,3 @@
+input_first = input().strip().split(' ')
+input_second = input().strip().replace('x',input_first[0])
+print(eval(input_second)==int(input_first[1]))
